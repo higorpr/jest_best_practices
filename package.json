@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "test": "npx dotenv -e .env.test npx jest -- --forceExit --passWithNoTests --detectOpenHandles",
+    "test": "npx dotenv -e .env.test npx jest -- --forceExit --passWithNoTests",
     "test:coverage": "npm run test -- --coverage",
     "test:migration:generate":"npx dotenv -e .env.test npx prisma migrate dev postgres-init"
   },
